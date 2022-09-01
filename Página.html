@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <p id="nombre"><strong>Nome:</strong></p>
+    <input id="nome" type="text" size="45">
+<section id="status" style="width: 450px;">
+    <p id="vida"><strong>  &nbsp; &nbsp; &nbsp;HP &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MP &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;SAN</strong></p>
+    <p id="atualmax"><strong>Atual &nbsp;/&nbsp;MAX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atual &nbsp;/&nbsp;MAX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atual &nbsp;/&nbsp;MAX</strong></p>
+    <input class="STATS" id="HP" type="number" maxlength="2">
+    <input class="STATS" id="HP2" type="number" maxlength="2">
+    <input class="STATS" id="MP" type="number" maxlength="2">
+    <input class="STATS" id="MP2" type="number" maxlength="2">
+    <input class="STATS" id="SAN" type="number" maxlength="2">
+    <input class="STATS" id="SAN2" type="number" maxlength="2">
+    <p id="race"><strong>Sangue Puro / Meio Sangue / Nascido Trouxa</strong></p>
+    <input class="raça" id="RAÇA1" type="radio" name="raça" onclick="sanguepuro()">
+    <input class="raça" id="RAÇA2" type="radio" name="raça">
+    <input class="raça" id="RAÇA3" type="radio" name="raça" onclick="nascido()">
+</section>
+<section id="pericias1">
+<input type="checkbox" id="check1"> Arremessar(STR & LUCK)<br>
+<input type="checkbox" id="check3"> Blefar(CHA)<br>
+<input type="checkbox" id="check5"> Ciência Trouxa(INT T)<br>
+<input type="checkbox" id="check6"> Ciência Mágica(INT M)<br>
+<input type="checkbox" id="check9"> Escalar(STR & DEX)<br>
+<input type="checkbox" id="check12"> Espreitar(DEX)<br>
+<input type="checkbox" id="check21"> História Trouxa(INT T)<br>
+<input type="checkbox" id="check22"> História Mágica(INT M)<br>
+<input type="checkbox" id="check23"> Intuição(WILL & CHA)<br>
+<input type="checkbox" id="check24"> Investigação (LUCK)<br>
+</section>
+<section id="pericias2">
+    <input type="checkbox" id="check123"> Medicina(INT M & T)<br>
+    <input type="checkbox" id="check422"> Natureza Trouxa(INT T)<br>
+    <input type="checkbox" id="check424"> Natureza Mágica(INT M)<br>
+    <input type="checkbox" id="check612"> Ocultar(WILL & LUCK)<br>
+    <input type="checkbox" id="check931"> Percepção (WILL)<br>
+    <input type="checkbox" id="check142"> Persuadir(CHA)<br>
+    <input type="checkbox" id="check221"> Pesquisa(LUCK & INT M & T)<br>
+    <input type="checkbox" id="check232"> Poções(INT M)<br>
+    <input type="checkbox" id="check231"> Saltar(STR & DEX)<br>
+    <input type="checkbox" id="check244"> Transfiguração(INT M)<br>
+    </section>
+<section id="atributos">
+    <div><strong>&nbsp; &nbsp;STR &nbsp; / &nbsp;CON</strong></div>
+    <input class="atributo" id="atributo1" type="number" maxlength="2">&nbsp;&nbsp;&nbsp;
+    <input class="atributo" id="atributo2" type="number" maxlength="2">   
+</section>
+<section id="atributos1">
+    <div><strong>&nbsp;&nbsp;WILL &nbsp;/ &nbsp;DEX</strong></div>
+    <input class="atributo" id="atributo3" type="number" maxlength="2">&nbsp;&nbsp;&nbsp;
+    <input class="atributo" id="atributo4" type="number" maxlength="2">   
+</section>
+<section id="atributos2">
+    <div><strong>&nbsp;&nbsp;INT T&nbsp;/ INT M</strong></div>
+    <input class="atributo" id="atributo5" type="number" maxlength="2">&nbsp;&nbsp;&nbsp;
+    <input class="atributo" id="atributo6" type="number" maxlength="2">   
+</section>
+<section id="atributos3">
+    <div><strong>&nbsp;&nbsp;LUCK&nbsp;/ CHA</strong></div>
+    <input class="atributo" id="atributo7" type="number" maxlength="2">&nbsp;&nbsp;&nbsp;
+    <input class="atributo" id="atributo8" type="number" maxlength="2">   
+</section>
+<input type="button" value="Calcular" onclick="calcular()" id="butao">
+<select id="classe">
+    <option>Animago</option>
+    <option>Legilimens / Occlumens</option>
+    <option>Especialista em Runas</option>
+    <option>Duelista</option>
+</select>
+<p id="classee"><strong>Classe:</strong></p>
+<input type="button" value="Escolher" onclick="escolher()" id="butao2">
+<section id="statsbatalha">
+<div id="battle"><strong>Concentração / Acertar & Desviar / Resistência</strong></div>
+<input class="STATSS" id="concentra" type="number" maxlength="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input class="STATSS" id="acertar" type="number" maxlength="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input class="STATSS" id="resist" type="number" maxlength="2">
+</section>
+<select id="habilidades" size="4">
+<option ondblclick="opi1()" id="op1">1</option>
+<option ondblclick="opi2()" id="op2">2</option>
+<option ondblclick="opi3()" id="op3">3</option>
+<option ondblclick="opi4()" id="op4">4</option>
+</select>
+<section id="equipamento">
+    <div id="eq">Equipamento:</div>
+    <textarea id="equip"></textarea>
+</section>
+<div id="titmag"> Magias:</div>
+<section id="magias">
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1º Ano&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2º Ano &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3º Ano</div>
+<select id="magias1" class="mag" size="7">
+    <option ondblclick="mag1()" id="mag1">Lumus/Nox</option>
+    <option ondblclick="mag2()" id="mag2">Wingardium Leviosa</option>
+    <option ondblclick="mag3()" id="mag3">Alohomora</option>
+    <option ondblclick="mag4()" id="mag4">Protego</option>
+    <option ondblclick="mag5()" id="mag5">Expelliarmus</option>
+    <option ondblclick="mag6()" id="mag6">Diminuendo / Engorgio</option>
+    <option ondblclick="mag7()" id="mag7">Homorfo</option>
+    </select>
+<select id="magias2" class="mag" size="7">
+    <option ondblclick="mag8()" id="mag8">Incarcerous</option>
+    <option ondblclick="mag9()" id="mag9">Colloportus</option>
+    <option ondblclick="mag10()" id="mag10">Sonorus / Quietus</option>
+    <option ondblclick="mag11()" id="mag11">Petrificus Totatulus</option>
+    <option ondblclick="mag12()" id="mag12">Enervate</option>
+    <option ondblclick="mag13()" id="mag13">Aparecium</option>
+    <option ondblclick="mag14()" id="mag14">Finite Incantatem</option>
+    </select>
+<select id="magias3" class="mag" size="7">
+    <option ondblclick="mag15()" id="mag15">Confundus</option>
+    <option ondblclick="mag16()" id="mag16">Diffindo</option>
+    <option ondblclick="mag17()" id="mag17">Depulso</option>
+    <option ondblclick="mag18()" id="mag18">Carcer Inimicus</option>
+    <option ondblclick="mag19()" id="mag19">Immobilus</option>
+    <option ondblclick="mag20()" id="mag20">Revelare</option>
+    <option ondblclick="mag21()" id="mag21">Ridikkulus</option>
+    </select>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4º Ano &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5º Ano &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6º Ano</div>
+<select id="magias4" class="mag2" size="7">
+    <option ondblclick="mag22()" id="mag22">Remendo</option>
+    <option ondblclick="mag23()" id="mag23">Accio</option>
+    <option ondblclick="mag24()" id="mag24">Mobilicorpus</option>
+    <option ondblclick="mag25()" id="mag25">Pericullum</option>
+    <option ondblclick="mag26()" id="mag26">Serpensortia</option>
+    <option ondblclick="mag27()" id="mag27">Travalíngua</option>
+    <option ondblclick="mag28()" id="mag28">Aguamenti</option>
+    </select>
+<select id="magias5" class="mag2" size="7">
+    <option ondblclick="mag29()" id="mag29">Rictusempra</option>
+    <option ondblclick="mag30()" id="mag30">Tarantallegra</option>
+    <option ondblclick="mag31()" id="mag31">Expecto Patronum</option>
+    <option ondblclick="mag32()" id="mag32">Estupefaça</option>
+    <option ondblclick="mag33()" id="mag33">Episkey</option>
+    <option ondblclick="mag34()" id="mag34">Evanesco</option>
+    <option ondblclick="mag35()" id="mag35">Oppugno</option>
+    </select>
+<select id="magias6" class="mag2" size="7">
+    <option ondblclick="mag36()" id="mag36">Abbafiato</option>
+    <option ondblclick="mag37()" id="mag37">Aresto Momentum</option>
+    <option ondblclick="mag38()" id="mag38">Homenum Revelio</option>
+    <option ondblclick="mag39()" id="mag39">Levicorpus</option>
+    <option ondblclick="mag40()" id="mag40">Salvo Hexia</option>
+    <option ondblclick="mag41()" id="mag41">Bombarda</option>
+    <option ondblclick="mag42()" id="mag42">Incendio</option>
+    </select>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7º Ano</div>
+<select id="magias7" class="mag3" size="6">
+    <option ondblclick="mag43()" id="mag43">Obliviate</option>
+    <option ondblclick="mag44()" id="mag44">Avada Kedavra</option>
+    <option ondblclick="mag45()" id="mag45">Imperio</option>
+    <option ondblclick="mag46()" id="mag46">Crucio</option>
+    <option ondblclick="mag47()" id="mag47">secret</option>
+    <option ondblclick="mag48()" id="mag48">Sectumsempra</option>
+    </select>
+</section>
+<input type="button" value="Salvar" onclick="save()" class='botaosalvar1'>
+<input type="button" value="Carregar" onclick="load()" class='botaosalvar'>
+</body>
+<script src="scripsti.js"></script>
+</html>

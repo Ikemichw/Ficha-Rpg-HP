@@ -1,0 +1,236 @@
+body{
+ background: no-repeat;
+ background-image: url("background.jpg");
+ background-size: auto;
+ color: black;
+ font-size: xx-large;
+}
+input#nome{
+    position: relative;
+    top: 90px;
+    left: 50px;
+    height: 30px;
+    width: 9cm;
+    font-size: 19px;
+    line-height: 2.3em;
+    margin: 0 0 0 0;
+}
+p#nombre{
+    position: relative;
+    margin: 0 0 0 0;
+    left: 50px;
+    top: 88px;
+}
+input.STATS{
+    position: relative;
+    top: 45px;
+    left: 20px;
+    line-height: 4.8em;
+    width: 1.5cm;
+    height: 70px;
+    margin: 0 0 0 0;
+    font-size: 35px;
+}
+input.raça{
+    position: relative;
+    top: 54px;
+    left: -50px;
+    height: 70px;
+    width: 0.7cm;
+    margin: 0 0 0 100px;
+}
+p#vida{
+  position: relative;
+  top: 80px;
+  left:32px;  
+}
+p#race{
+    margin: 0;
+    position: relative;
+    left: 20px;
+    top: 70px;
+    font-size: 16pt;
+}
+p#atualmax{
+    margin: 0 0 0 0;
+    font-size: 15pt;
+    position: relative;
+    left: 30px;
+    top: 45px;
+}
+section#pericias1{
+    position: relative;
+    top: 63px;
+    left: 50px;
+    width: 363px;
+    height: 389px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    margin: 0;
+    padding-top: 0.3cm;
+    padding-left: 0.3cm;
+    font-size: 25px;
+}
+input{
+    width: 0.7cm; 
+    height: 0.7cm;
+}
+section#pericias2{
+    position: relative;
+    top: -341px;
+    left: 428px;
+    width: 10cm;
+    height: 10.3cm;
+    border: 2px solid rgba(0, 0, 0, 1);
+    margin: 0;
+    padding-top: 0.3cm;
+    padding-left: 0.3cm;
+    font-size: 25px;
+}
+section#atributos{
+    position: absolute;
+    top: 30px;
+    left: 920px;
+    width: 200px;
+    height: 150px;
+}
+input.atributo{
+position: relative;
+top: 0px;
+left: 20px;
+line-height: 4.8em;
+width: 1.5cm;
+height: 70px;
+margin: 0 0 0 0;
+font-size: 35px;
+}
+section#atributos1{
+    position: absolute;
+    top: 150px;
+    left: 920px;
+    width: 200px;
+    height: 150px;
+}
+section#atributos2{
+    position: absolute;
+    top: 270px;
+    left: 920px;
+    width: 200px;
+    height: 150px;
+}
+section#atributos3{
+    position: absolute;
+    top: 390px;
+    left: 920px;
+    width: 200px;
+    height: 150px;
+}
+div{
+font-size: 21pt;    
+}
+input#butao{
+position: absolute;
+left: 925px;
+top: 510px;
+width: 5cm;    
+}
+select#classe{
+    position: absolute;
+    top: 590px;
+    left: 935px;
+    height: 1cm;
+}  
+p#classee{
+    position: absolute;
+    top: 520px;
+    left: 935px;
+}
+input#butao2{
+    position: absolute;
+    left: 925px;
+    top: 635px;
+    width: 5cm;    
+    }
+section#statsbatalha{
+    position: relative;
+    top: -320px;
+    left: 50px;
+    width: 380px;
+    height: 150px;
+    border: 2px solid black;
+}
+div#battle{
+    font-size: 14pt;
+    position: relative;
+    left: 1px;
+    top: 10px;
+}
+input.STATSS{
+    position: relative;
+    left: 20px;
+    line-height: 4.8em;
+    width: 1.5cm;
+    height: 70px;
+    margin: 0 0 0 0;
+    font-size: 35px;
+    top: 15px;
+}
+select#habilidades{
+    position: relative;
+    left: 918px;
+    top: -660px;
+    width: 190px;
+}
+section#equipamento{
+    position: absolute;
+    width: 190px;
+    height: 490px;
+    top: 800px;
+    left: 927px;
+}
+textarea#equip{
+    position: relative;
+    width: 186px;
+    left: -2px;
+    top: 9px;
+    height: 494px;
+    margin: 0px;
+}
+div#eq{
+    margin: 0px;
+}
+section#magias{
+    position: relative;
+    top: -350px;
+    left: 50px;
+}
+select.mag{
+    width: 170px;
+}
+select.mag2{
+    position: relative;
+    width: 170px;
+}
+select.mag3{
+    position: relative;
+    width: 170px;
+}
+div#titmag{
+    position: relative;
+    top: -380px;
+    left: 250px;
+    font-size: 35pt;
+}
+input.botaosalvar{
+    position: absolute;
+    top: 1000px;
+    left: 550px;
+    width: 250px;
+    height: 100px;
+}
+input.botaosalvar1{
+    position: absolute;
+    top: 890px;
+    left: 550px;
+    width: 250px;
+    height: 100px;
+}
